@@ -17,13 +17,16 @@ ship something this week without pretending the deep problem is solved.
 
 ## Install
 
-**Claude Code / Claude Desktop**
+**Claude Code / Claude Desktop** — clone into a folder named after the skill, then copy
+it in:
 
 ```bash
+git clone https://github.com/amachador/cognitive-accessibility-skill.git cognitive-accessibility
 cp -r cognitive-accessibility ~/.claude/skills/
 ```
 
-Use `.claude/skills/` inside a repo to scope it to one project.
+The folder name has to stay `cognitive-accessibility` — that's how the skill is
+identified. Use `.claude/skills/` inside a repo to scope it to one project.
 
 **Claude.ai** — upload the zip under Settings → Capabilities → Skills.
 
