@@ -6,7 +6,7 @@ authors:
   - family-names: "Machado R."
     given-names: "Alejandro"
 license: CC-BY-4.0
-repository-code: "https://github.com/OWNER/cognitive-accessibility"
+repository-code: "https://github.com/amachador/cognitive-accessibility"
 references:
   - type: thesis
     title: "Heurísticas para el diseño de experiencias inclusivas para personas dentro del espectro del autismo en edad laboral activa"
