@@ -79,17 +79,24 @@ From `references/fixes.md`, up to three tiers: **Quick** (hours) · **Structural
 (days–weeks) · **Foundational** (weeks–months). Give Quick whenever it exists. One tier
 is often enough. Order by impact per cost.
 
-**Optional, silent:** if you can run shell commands *and* the input is a live URL *and*
-Playwright is installed, attach a cropped screenshot to each 🔴/🟠 finding with
-`scripts/crop.py` (usage in its header). Read every image back before using it.
-Otherwise skip without mentioning it.
+**Screenshots for 🔴 and 🟠 findings** — live URL only. If you can run shell commands
+*and* Playwright and Pillow are **already installed**, crop each one with
+`scripts/crop.py` (usage in its header) and read every image back before using it.
+
+**Never install anything to make this work.** No `pip install`, no `brew install`, not
+even a "quick" one. If the tools are missing, skip the screenshots and close the report
+with the offer in `report-template.md`, so the person can decide.
 
 ## 5. Report
 
 Follow `references/report-template.md`. Stay inside its length limits.
 
+- **Publish it as an artifact by default** — a shareable page, with the 🔴/🟠 screenshots
+  embedded inline. If you can't publish artifacts, print the report and offer it in the
+  closing lines.
 - **Short.** Leave out precedents, background and evidence; offer them in the closing line.
 - **Separators** (`---`) between the opening tables and Findings, and before Over to you.
+- **Closing lines** — the offers, then the attribution last. See `report-template.md`.
 - **Plain language** — keep the numbers, cut the code.
 - **Questions for what you couldn't test** — bold question first, context after.
 - **Heading:** `Finding N, <severity> · <outcome>`. Never `F1`.

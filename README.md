@@ -87,23 +87,29 @@ silent gap. Reports are short on purpose — ask for more on any finding.
 | **H8** | Resilience and error tolerance | Errors fast to understand, easy to recover from. |
 | **H9** | Focus management | Support concentration, hyperfocus, and time. |
 
+## Where the report goes
+
+By default the report is published as a **shareable page**, with screenshots of the most
+severe findings embedded in it. Where that isn't available, the skill prints the report
+and says a page is possible.
+
 ## Optional: annotated screenshots
 
-**The skill is plain Markdown and works anywhere.** This one step is the only part that
-needs anything installed, and it is entirely optional.
+**The skill is plain Markdown and works anywhere.** This is the only part that needs
+anything installed, and it is entirely optional.
 
-Where shell access exists (Claude Code, or any agent that can run commands) **and** the
-input is a live URL, the skill can attach a cropped screenshot with the problem
-outlined — 🔴 Blocker and 🟠 High findings only, so the report stays scannable.
+Given shell access **and** a live URL **and** these two packages already present, the
+skill crops a screenshot of each 🔴 Blocker and 🟠 High finding with the problem
+outlined:
 
 ```bash
 pip install playwright pillow && python3 -m playwright install chromium
 ```
 
-Anywhere else — claude.ai, ChatGPT, Gemini, a plain chat window — the skill skips the
-step without comment and reports in text. Nothing else changes: all 9 heuristics, every
-check, the fix ladder and the questions work identically. Screenshot, Figma and code
-inputs never used it anyway.
+**The skill never installs them for you.** If they're missing it skips the screenshots
+and tells you at the end of the report that they're available — the decision to install
+anything stays yours. Everything else works identically: all 9 heuristics, the checks,
+the fix ladder and the questions.
 
 ## Reading the output
 

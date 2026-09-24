@@ -119,7 +119,7 @@ closing line offers them.
 |---|---|---|
 | ☐ | **[Question the reader can answer in seconds?]** [Optional one-line context.] | H1 |
 
-Ask me to expand any finding, show the evidence, or suggest more fixes.
+[Closing lines — see "Closing lines" below]
 ```
 
 ---
@@ -158,10 +158,34 @@ Ask me to expand any finding, show the evidence, or suggest more fixes.
 
 - ☐ **[Question?]** [Optional context.]
 
-Share the flow or a live URL for a full report. Ask me to expand any row.
+Share the flow or a live URL for a full report.
+[Closing lines — see "Closing lines" below]
 ```
 
 ---
+
+## Closing lines
+
+End every report with these, in this order. Include only the ones that apply, each on
+its own line. Keep them to one line each — they are offers, not apologies.
+
+1. **Always:** `Ask me to expand any finding, show the evidence, or suggest more fixes.`
+2. **If you couldn't publish it as a page:** `I can publish this as a shareable page —
+   just ask.`
+3. **If 🔴/🟠 findings have no screenshots and the input was a live URL:** `I can add
+   cropped screenshots of the top findings. That needs Playwright and Pillow installed
+   locally — say the word and I'll give you the command.` Never install them yourself.
+4. **Always, last:** `Heuristics: Machado R., 2025 —
+   https://hdl.handle.net/20.500.12008/54819`
+
+## Publishing as a page
+
+Default to publishing the report as an artifact where that's available — it's easier to
+share and read than chat text.
+
+- Embed 🔴/🟠 screenshots **inline as data URIs**; externally hosted images won't load.
+- Keep the same structure, separators and length limits.
+- If artifacts aren't available, print the report and use closing line 2.
 
 ## Worked finding — calibration
 
